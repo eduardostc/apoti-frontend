@@ -38,7 +38,7 @@ jobs:
         run: npm install
 
       - name: Compilar o código
-        run: npm run build -- --skipDiagnostics
+        run: npx vite build
 
   lint-and-quality:
     name: 2. Lint & Quality
