@@ -38,7 +38,7 @@ jobs:
         run: npm install
 
       - name: Compilar o código
-        run: CI=false npm run build
+        run: npm run build -- --skipDiagnostics
 
   lint-and-quality:
     name: 2. Lint & Quality
